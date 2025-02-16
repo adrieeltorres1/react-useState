@@ -13,11 +13,11 @@ const App = () => {
             <input className="rounded-md  border-2 border-gray-200 w-[250px] p-3 " type="number" id="idade"/>
 
             <button className="border-1
-              rounded-full 
+              rounded-full
               h-[45px] 
               bg-blue-500 
               hover:bg-sky-600  
-              text-base mt-4 " 
+              text-base mt-4" 
               type="submit">
               Adiconar
             </button>
