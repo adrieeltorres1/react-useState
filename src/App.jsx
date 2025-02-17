@@ -1,9 +1,11 @@
-const App = () => {
-  const [aluno, setAluno] = ('')
-  const [genero, setGenero] = ('')
-  const [idade, setIdade] = ('')
-  const [alunos, setAlunos] = []
+import { useState } from "react"
 
+const App = () => {
+  const [aluno, setAluno] = useState('') 
+  const [genero, setGenero] = useState('')
+  const [idade, setIdade] = useState('')
+  const [alunos, setAlunos] = useState([])
+  
 
 
   return (  
