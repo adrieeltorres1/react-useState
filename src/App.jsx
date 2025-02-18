@@ -6,6 +6,11 @@ const App = () => {
   const [idade, setIdade] = useState('')
   const [alunos, setAlunos] = useState([])
   
+  function addAluno (e) {
+    setAluno(e.target.value);
+  }
+
+
   return (  
     <>
       <form className="flex justify-center 
@@ -28,6 +33,7 @@ const App = () => {
               type="text" 
               id="aluno" 
               placeholder="Digite o nome do aluno"
+              onChange={addAluno}
               />
 
             <label htmlFor="genero">Gênero</label>
@@ -39,7 +45,6 @@ const App = () => {
               type="text" 
               id="genero" 
               placeholder="Digite o gênero"
-              required
               />
 
             <label htmlFor="idade">Idade</label>
@@ -54,7 +59,7 @@ const App = () => {
               placeholder="Digite a idade"
               />
 
-            <button className="border-1
+            <button onClick={setAluno} className="border-1
               rounded-full
               h-[45px] 
               bg-blue-500 
@@ -62,9 +67,13 @@ const App = () => {
               text-base mt-4" 
               type="submit">
               Adiconar
+              
             </button>
           </div>
       </form>
+      <div>
+        <p>{aluno}</p>
+      </div>
     </>
   );
 }
