@@ -6,8 +6,6 @@ const App = () => {
   const [idade, setIdade] = useState('')
   const [alunos, setAlunos] = useState([])
   
-
-
   return (  
     <>
       <form className="flex justify-center 
@@ -16,7 +14,9 @@ const App = () => {
         bg-slate-100 
         border-blue-200 
         w-[300px] 
-        h-[350px]">
+        h-[350px]"
+        >
+
           <div className="flex flex-col mt-4">
 
             <label htmlFor="aluno">Nome do aluno(a)</label>
@@ -27,7 +27,8 @@ const App = () => {
               p-3" 
               type="text" 
               id="aluno" 
-              placeholder="Digite o nome do aluno" required/>
+              placeholder="Digite o nome do aluno"
+              />
 
             <label htmlFor="genero">Gênero</label>
             <input className="rounded-md 
@@ -37,7 +38,9 @@ const App = () => {
               p-3" 
               type="text" 
               id="genero" 
-              placeholder="Digite o gênero" required/>
+              placeholder="Digite o gênero"
+              required
+              />
 
             <label htmlFor="idade">Idade</label>
             <input 
@@ -48,7 +51,8 @@ const App = () => {
               p-3 " 
               type="number" 
               id="idade" 
-              placeholder="Digite a idade" required/>
+              placeholder="Digite a idade"
+              />
 
             <button className="border-1
               rounded-full
