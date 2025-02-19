@@ -59,7 +59,7 @@ const App = () => {
               placeholder="Digite a idade"
               />
 
-            <button onClick={setAluno} className="border-1
+            <button className="border-1
               rounded-full
               h-[45px] 
               bg-blue-500 
@@ -71,8 +71,10 @@ const App = () => {
             </button>
           </div>
       </form>
-      <div>
-        <p>{aluno}</p>
+      <div className="text-white">
+        <p>Nome:{aluno}</p>
+        <p>Gênero:{genero}</p>
+        <p>Idade:{genero}</p>
       </div>
     </>
   );
