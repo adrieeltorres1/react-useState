@@ -31,13 +31,10 @@ const App = () => {
     };
     setAlunos([...alunos, novosAlunos]);
     
-  
-    // Limpar os campos de entrada após a submissão
     alunoInputRef.current.value = '';
     generoInputRef.current.value = '';
     idadeInputRef.current.value = '';
 
-    // Resetar as referências
     alunoRef.current = '';
     generoRef.current = '';
     idadeRef.current = '';
